@@ -14,25 +14,26 @@ public class SimpleCompositor extends Compositor {
         this.window = window;
     }
     @Override
-    public void compose(Glyph glyph)  {
-        Bounds cursor = new Bounds(new Point(glyph.getBounds().getPoint()),0,0);
+    public void compose(){
+
+        Bounds cursor =  new Bounds(new Point(composition.getBounds().getPoint()),0,0);
 
         for (Glyph child : composition.children) {
-            // ask (leaf) child to set size, based on window
-
-            try {
-
+              try {
                 child.setSize(10,10);
                 child.setLocation(cursor.getPoint());
                 cursor = composition.updateCursor(cursor, child);
 
                 child.compose();
-                composition.setLocation(cursor.getPoint());
-                glyph.setLocation(new Point(50,50));
+
+
+
             }catch(Exception e){
-            }finally{ continue; }
+            }finally{
+
+                  continue; }
         }
-//        glyph.setBounds(cursor);
+
     }
 
 
@@ -42,15 +43,34 @@ public class SimpleCompositor extends Compositor {
         this.composition = composition;
     }
 
-    @Override
-    public void compose(){
 
 
+//    @Override
+//    public void compose(Glyph glyph)  {
+//        Bounds cursor = new Bounds(new Point(glyph.getBounds().getPoint()),0,0);
+//
+//        for (Glyph child : composition.children) {
+//            // ask (leaf) child to set size, based on window
+//
+//            try {
+//
+//                child.setSize(10,10);
+//                child.setLocation(cursor.getPoint());
+//                cursor = composition.updateCursor(cursor, child);
+//
+//                child.compose();
+//                composition.setLocation(cursor.getPoint());
+//                glyph.setLocation(new Point(50,50));
+//            }catch(Exception e){
+//            }finally{ continue; }
+//        }
+////        glyph.setBounds(cursor);
+//    }
 
     }
 
 
-}
+
 //
 //    // create cursor based on parent
 ////for (... child= ...) {

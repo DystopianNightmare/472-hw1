@@ -2,7 +2,6 @@ import java.awt.*;
 
 public class Row extends Composition {
 
-
     public Row(Compositor compositor) {
         super(compositor);
         setBounds(new Bounds(new Point(0, 0), 0, 0));
@@ -24,7 +23,7 @@ public class Row extends Composition {
         glyph.setBounds(new Bounds(new Point(0, 0), 0, 0));
         glyph.setParent(this);
         this.children.add(position, glyph);
-        compositor.compose(compositor.getRoot(this));
+        compositor.compose();
 
     }
 
@@ -33,14 +32,21 @@ public class Row extends Composition {
     }
 
     public Bounds updateCursor(Bounds cursor, Glyph glyph) {
-        Bounds bounds = new Bounds(new Point(cursor.getPoint().x , cursor.getPoint().y), cursor.getHeight(), cursor.getWidth());
+        Bounds bounds = new Bounds(new Point(cursor.getPoint().x+getSize().height , cursor.getPoint().y), cursor.getHeight(), cursor.getWidth());
 
         bounds.setPointX(cursor.getPoint().x + glyph.getSize().width);
         bounds.setPointY(cursor.getPoint().y);
 
-        this.getBounds().setHeight(cursor.getHeight());
-        this.getBounds().setHeight(cursor.getWidth());
+
         return bounds;
+    }
+
+    public Bounds  updateParent(Bounds cursor){
+        Bounds retval = new Bounds(new Point(0, 0), 0, 0);
+        retval = cursor;
+        retval.setHeight(cursor.getPoint().x+cursor.getHeight());
+        retval.setWidth(cursor.getPoint().y+cursor.getWidth());
+        return retval;
     }
 
 }

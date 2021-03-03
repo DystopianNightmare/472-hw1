@@ -1,9 +1,6 @@
-import java.awt.*;
-
 public abstract class Compositor {
     abstract void setComposition(Composition composition);
-    abstract void compose() ;
-    abstract void compose(Glyph glyph) ;
+    abstract void compose();
 
     public Glyph getRoot(Glyph glyph){
         while(glyph.getParent() != null){
@@ -12,5 +9,3 @@ public abstract class Compositor {
         return glyph;
     }
 }
-
-// this will set position and size

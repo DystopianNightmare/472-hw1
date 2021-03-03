@@ -10,5 +10,6 @@ public Composition(Compositor compositor){
     compositor.setComposition(this);
 }
 abstract Bounds updateCursor(Bounds cursor, Glyph glyph);
+abstract Bounds updateParent(Bounds cursor);
 
 }
