@@ -1,14 +1,28 @@
 
+Y	java:S125Š"<This block of commented-out lines of code should be removed.(Š¬€î8ò‚§¹ÿ.
+Y	java:S125"<This block of commented-out lines of code should be removed.(ê¹‡“8ò‚§¹ÿ.
 i
-java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘8£ÎÎ°ı.
-L
-java:S1481"/Remove this unused "character2" local variable.(áï÷Â8Ç‘Ç€ÿ.
-]	java:S125 "<This block of commented-out lines of code should be removed.(ÛÃ÷¤ûÿÿÿÿ8Çï«Õş.
-J
-java:S1481"(Remove this unused "col" local variable.(†è¯¨øÿÿÿÿ8¿™È€ÿ.
-]	java:S125""<This block of commented-out lines of code should be removed.(Óİ€œşÿÿÿÿ8Ç‘Ç€ÿ.
-Z
-java:S3252"8Use static access with "java.awt.Frame" for "getFrames".(¢óÔ…üÿÿÿÿ8±Îış.
-K
-java:S1481"/Remove this unused "character3" local variable.(¾“õv8Ç‘Ç€ÿ.
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘8ò‚§¹ÿ.
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡8ò‚§¹ÿ.
+]	java:S125*"<This block of commented-out lines of code should be removed.(Èåğöúÿÿÿÿ8“²Ø¹ÿ.
+^	java:S125‚"<This block of commented-out lines of code should be removed.(¤èªÙüÿÿÿÿ8öš”Üÿ.
+]	java:S125F"<This block of commented-out lines of code should be removed.(ø—Õêûÿÿÿÿ8™ªªºÿ.
+]	java:S125Y"<This block of commented-out lines of code should be removed.(ôñ‡şşÿÿÿÿ8™ªªºÿ.
+F
+java:S1481d")Remove this unused "row2" local variable.(ƒ»ßş8ÌüÂÜÿ.
+]	java:S125"<This block of commented-out lines of code should be removed.(œŠìúÿÿÿÿ8“²Ø¹ÿ.
+]	java:S125"<This block of commented-out lines of code should be removed.(Ú§¦†şÿÿÿÿ8“²Ø¹ÿ.
+X	java:S125:"<This block of commented-out lines of code should be removed.(šâĞß8™ªªºÿ.
+]	java:S125"<This block of commented-out lines of code should be removed.(‡Ü…Éüÿÿÿÿ8“²Ø¹ÿ.
+W	java:S125""<This block of commented-out lines of code should be removed.(ï£ôL8“²Ø¹ÿ.
+]	java:S1256"<This block of commented-out lines of code should be removed.(‡Ü…Éüÿÿÿÿ8™ªªºÿ.
+]	java:S125R"<This block of commented-out lines of code should be removed.(œŠìúÿÿÿÿ8™ªªºÿ.
+]	java:S1251"<This block of commented-out lines of code should be removed.(£½®™úÿÿÿÿ8“²Ø¹ÿ.
+]	java:S125C"<This block of commented-out lines of code should be removed.(şÓş©ûÿÿÿÿ8™ªªºÿ.
+]	java:S125%"<This block of commented-out lines of code should be removed.(¸éÿ•úÿÿÿÿ8“²Ø¹ÿ.
+^	java:S125–"<This block of commented-out lines of code should be removed.(Óİ€œşÿÿÿÿ8ò‚§¹ÿ.
+]	java:S125"<This block of commented-out lines of code should be removed.(í‡Ä¯ÿÿÿÿÿ8“²Ø¹ÿ.
+]	java:S125N"<This block of commented-out lines of code should be removed.(ÖÙâÊùÿÿÿÿ8™ªªºÿ.
+Y	java:S125’"<This block of commented-out lines of code should be removed.(»ÒÉå8ò‚§¹ÿ.
+W	java:S125@"<This block of commented-out lines of code should be removed.(–‹áx8™ªªºÿ.
+X	java:S125"<This block of commented-out lines of code should be removed.(àñ›â8“²Ø¹ÿ.

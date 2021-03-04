@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.ArrayList;
 
 public abstract class CompositeGlyph extends Glyph {
@@ -14,9 +15,19 @@ public abstract class CompositeGlyph extends Glyph {
         throw new NullChildException();
     } return children.get(position);
     }
-    abstract void insert(Glyph glyph, int position) throws NullChildException, NoChildOperationsException;
 
-    abstract void remove(Glyph glyph);
+    void insert(Glyph glyph, int position) {
+
+        glyph.setParent(this);
+        this.children.add(position, glyph);
+        Glyph root = this;
+        while(root.getParent() != null){
+            root = root.getParent();
+        }
+        root.compose();
+    }
+
+     void remove(Glyph glyph){}
 
 
 

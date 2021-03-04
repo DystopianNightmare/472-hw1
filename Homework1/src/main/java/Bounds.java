@@ -33,7 +33,8 @@ public class Bounds {
     }
 
     public void setPoint(Point point) {
-        this.point = point;
+        this.point.x = point.x;
+        this.point.y=point.y;
     }
 
     public void setPointX(int x){
@@ -42,4 +43,6 @@ public class Bounds {
     public void setPointY(int y){
         this.point.y=y;
     }
+
+
 }

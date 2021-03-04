@@ -1,11 +1,8 @@
 public abstract class Compositor {
-    abstract void setComposition(Composition composition);
+    protected Composition composition;
+    public void setComposition(Composition composition) {this.composition=composition;}
     abstract void compose();
 
-    public Glyph getRoot(Glyph glyph){
-        while(glyph.getParent() != null){
-            glyph = glyph.getParent();
-        }
-        return glyph;
-    }
+
+
 }

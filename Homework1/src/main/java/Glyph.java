@@ -3,15 +3,18 @@
 import java.awt.*;
 
 abstract class Glyph {
-    private Bounds bounds;
-    private Glyph parent;
-//    private ArrayList<Glyph> child;
-    protected Dimension dimension;
+    private Bounds bounds = new Bounds(new Point(0,0),0,0);
+    private Glyph parent = null;
+
+
+    private Window window;
 
 
 
+    public void compose() {}
 
 
+public void adjustParent(Glyph child){}
     abstract void draw(Window window);
     boolean intersects(Point point){
 
@@ -25,10 +28,16 @@ abstract class Glyph {
     void setBounds(Bounds bounds){ this.bounds=bounds; }
     Bounds getBounds(){ return bounds;}
 
-    void setSize(int height, int width) { dimension= new Dimension(); this.dimension.setSize(height, width); }
-    Dimension getSize(){ return dimension;}
-    void compose() throws NoChildOperationsException {throw new NoChildOperationsException();}
+    void setSize(Window window) {}
+
+
     void compose(Glyph glyph) throws NoChildOperationsException {throw new NoChildOperationsException();}
-     void setLocation(Point point) {bounds.setPoint(point);
+     void setLocation(Point point) {bounds.setPoint(point)
+     ;
+     }
+
+     public String toString(){
+         System.out.println(bounds.getPoint().x + " " +bounds.getPoint().y +" "+ bounds.getHeight() + " "+ bounds.getWidth());
+         return "";
      }
 }

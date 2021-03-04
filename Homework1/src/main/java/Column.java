@@ -4,7 +4,7 @@ public class Column extends Composition {
 
     public Column(Compositor compositor) {
         super(compositor);
-        setBounds(new Bounds(new Point(0, 0), 0, 0));
+
     }
 
     @Override
@@ -18,34 +18,20 @@ public class Column extends Composition {
         return children.get(position);
     }
 
-    void insert(Glyph glyph, int position) {
-        glyph.setBounds(new Bounds(new Point(0, 0), 0, 0));
-        glyph.setParent(this);
-        this.children.add(position, glyph);
 
-        compositor.compose();
-
-    }
-
-    void remove(Glyph glyph) {
-        children.set(children.indexOf(glyph), null);
-    }
 
     public Bounds updateCursor(Bounds cursor, Glyph glyph) {
-        Bounds bounds = new Bounds(new Point(cursor.getPoint().x, cursor.getPoint().y+getSize().height  ), cursor.getHeight(), cursor.getWidth());
+        Bounds bounds = new Bounds(new Point(this.getBounds().getPoint().x, this.getBounds().getHeight()), this.getBounds().getHeight(), this.getBounds().getWidth());
 
-        bounds.setPointX(cursor.getPoint().x);
-        bounds.setPointY(cursor.getPoint().y+ glyph.getSize().width);
 
 
         return bounds;
     }
 
-    public Bounds  updateParent(Bounds cursor){
-        Bounds retval = new Bounds(new Point(0, 0), 0, 0);
-        retval = cursor;
-        retval.setHeight(0);
-        retval.setWidth(0);
-        return retval;
+    public void adjustParent(Glyph child){
+
+        this.getBounds().setHeight(child.getBounds().getPoint().y+child.getBounds().getHeight());
+        this.getBounds().setWidth(Math.max(child.getBounds().getWidth(),this.getBounds().getWidth()));
     }
+
 }

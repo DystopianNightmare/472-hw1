@@ -6,7 +6,7 @@ public class Character extends Glyph {
 
     public Character(char aChar){
         this.aChar=aChar;
-        setSize(10,10);
+
     }
 
     @Override
@@ -14,9 +14,13 @@ public class Character extends Glyph {
         window.drawCharacter(aChar, getBounds().getPoint().x , getBounds().getPoint().y);
     }
 
+@Override
+    void setSize(Window window){
+        super.getBounds().setHeight(window.charHeight(aChar));
+        super.getBounds().setWidth(window.charWidth(aChar));
+}
 
 
 
-//    public void accept(GlyphVisitor v) { v.visit(this); }
 
 }

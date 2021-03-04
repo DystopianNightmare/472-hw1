@@ -3,13 +3,18 @@ import java.util.ArrayList;
 
 public abstract class Composition extends CompositeGlyph {
 
-    protected Compositor compositor ;
+    protected Compositor compositor;
 
-public Composition(Compositor compositor){
-    this.compositor=compositor;
-    compositor.setComposition(this);
-}
-abstract Bounds updateCursor(Bounds cursor, Glyph glyph);
-abstract Bounds updateParent(Bounds cursor);
+    public Composition(Compositor compositor) {
+        this.compositor = compositor;
+        compositor.setComposition(this);
+    }
+
+    abstract Bounds updateCursor(Bounds cursor, Glyph glyph);
+
+    @Override
+    public void compose() {
+        compositor.compose();
+    }
 
 }

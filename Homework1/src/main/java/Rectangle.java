@@ -4,14 +4,15 @@ public class Rectangle extends Glyph {
 
 
 
-    public Rectangle(){
-//        setBounds(new Bounds(new Point(0,0),0,0));
-        setSize(15,10);
+    public Rectangle(int height, int width){
+        this.getBounds().setWidth(width);
+        this.getBounds().setHeight(height);
+
     }
 
     @Override
     void draw(Window window) {
-        window.drawRectangle(getBounds().getPoint().x , getBounds().getPoint().y,  getSize().height, getSize().width);
+        window.drawRectangle(getBounds().getPoint().x , getBounds().getPoint().y,  getBounds().getHeight(), getBounds().getWidth());
     }
 
 

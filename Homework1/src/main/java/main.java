@@ -102,19 +102,16 @@ public class main {
         main.insert(row,0);
 
 
-        row.insert(row2,0);
-
-
         Character charactera = new Character('a');
         row.insert(charactera, 0);
-        Rectangle rectangle = new Rectangle();
+        Rectangle rectangle = new Rectangle(8,16);
         row.insert(rectangle, 1);
+
 
         row.insert(column1,2);
 
         Character characterx = new Character('X');
         column1.insert(characterx, 0);
-
         Character charactery = new Character('Y');
         column1.insert(charactery, 1);
         Character characterz = new Character('Z');
@@ -123,22 +120,29 @@ public class main {
         Character characteraz = new Character('b');
         row.insert(characteraz, 3);
 
-        main.insert(row2,1);
-        Character charactero = new Character('o');
-        row2.insert(charactero, 0);
+        main.toString();
+        row.toString();
+        charactera.toString();
+        rectangle.toString();
+        column1.toString();
+        characteraz.toString();
+
+//        main.insert(row2,1);
+//        Character charactero = new Character('o');
+//        row2.insert(charactero, 0);
 
 
         swingWindow.setContents(main);
 
 
 //        Column col = new Column();
-
-
+//
+//
 //
 //        Character character1 = new Character('3');
 //        row.insert(character1,3);
-
-
+//
+//
 //        Character character2 = new Character('b');
 //        Character character3 = new Character('c');
 //        row.insert(col,2);
