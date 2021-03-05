@@ -37,7 +37,7 @@ public void adjustParent(Glyph child){}
      }
 
      public String toString(){
-         System.out.println(bounds.getPoint().x + " " +bounds.getPoint().y +" "+ bounds.getHeight() + " "+ bounds.getWidth());
-         return "";
+         return bounds.getPoint().x + " " +bounds.getPoint().y +" "+ bounds.getHeight() + " "+ bounds.getWidth();
+
      }
 }

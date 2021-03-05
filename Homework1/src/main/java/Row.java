@@ -34,7 +34,7 @@ public class Row extends Composition {
 
     public void adjustParent(Glyph child){
 
-        this.getBounds().setHeight((Math.max(child.getBounds().getHeight(), this.getBounds().getHeight())));
+        this.getBounds().setHeight((Math.max(child.getBounds().getHeight(), 2+this.getBounds().getHeight())));
         this.getBounds().setWidth(child.getBounds().getPoint().x+child.getBounds().getWidth());
     }
 

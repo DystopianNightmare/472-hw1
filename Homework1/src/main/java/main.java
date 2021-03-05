@@ -120,16 +120,30 @@ public class main {
         Character characteraz = new Character('b');
         row.insert(characteraz, 3);
 
-        main.toString();
-        row.toString();
-        charactera.toString();
-        rectangle.toString();
-        column1.toString();
-        characteraz.toString();
+       ;
 
-//        main.insert(row2,1);
-//        Character charactero = new Character('o');
-//        row2.insert(charactero, 0);
+
+                                                //moving main above or below this block will make a difference in how it is processed
+        Character m = new Character('m');
+        row2.insert(m, 0);
+        Character mm = new Character('m');
+        row2.insert(mm, 1);
+        Character mmm = new Character('m');
+        row2.insert(mmm, 2);
+        Character mmmm = new Character('m');
+        row2.insert(mmmm, 3);
+        main.insert(row2,1);
+
+        System.out.println("main " +main.toString());
+        System.out.println("row " +row.toString());
+        System.out.println("col " +column1.toString());
+        System.out.println("row2 " +row.toString());
+//        System.out.println("main " +main.toString());
+//        row.toString();
+//        charactera.toString();
+//        rectangle.toString();
+//        column1.toString();
+//        characteraz.toString()
 
 
         swingWindow.setContents(main);

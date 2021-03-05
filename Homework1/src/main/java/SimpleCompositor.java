@@ -31,15 +31,15 @@ public class SimpleCompositor extends Compositor {
                     i++;
                     child.setSize(window);
 //
-                    if(childPos==0){
-                        child.setLocation(cursor.getPoint());
-                        childPos++;
-                    }else {
-                        cursor = composition.updateCursor(cursor, child);
-                        child.setLocation(cursor.getPoint());
-                    }
-//                    child.setLocation(cursor.getPoint());
-//                    cursor = composition.updateCursor(cursor, child);
+//                    if(childPos==0){
+//                        child.setLocation(cursor.getPoint());
+//                        childPos++;
+//                    }else {
+//                        cursor = composition.updateCursor(cursor, child);
+//                        child.setLocation(cursor.getPoint());
+//                    }
+                    child.setLocation(cursor.getPoint());
+                    cursor = composition.updateCursor(cursor, child);
 
                     child.compose();
 
