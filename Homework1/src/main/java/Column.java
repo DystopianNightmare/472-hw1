@@ -20,22 +20,16 @@ public class Column extends Composition {
 
 
 
-    public Bounds updateCursor(Bounds cursor, Glyph glyph) {
-        Bounds bounds = new Bounds(new Point(this.getBounds().getPoint().x, glyph.getBounds().getHeight()+cursor.getPoint().y),
-                glyph.getBounds().getHeight()+cursor.getPoint().x, this.getBounds().getPoint().y+cursor.getPoint().y);
-
-
-
-        return bounds;
+    public void updateCursor(Bounds cursor, Glyph glyph) {
+        cursor.setY(glyph.getBounds().getHeight()+cursor.getPoint().y);
+        cursor.setHeight(cursor.getHeight()+glyph.getBounds().getHeight());
+        cursor.setWidth(Math.max(cursor.getPoint().x,glyph.getBounds().getWidth()));
     }
 
-    public void adjustParent(Bounds bounds, Glyph child){
+    public void adjustParent(Bounds bounds){
 
-
-        this.getBounds().setHeight(bounds.getPoint().y);
-        this.getBounds().setWidth(bounds.getPoint().x+child.getBounds().getWidth());
-//        this.getBounds().setWidth(Math.max(child.getBounds().getWidth(),this.getBounds().getWidth()));
-
+        getBounds().setHeight(bounds.getHeight());
+        getBounds().setWidth(bounds.getWidth());
 
     }
 

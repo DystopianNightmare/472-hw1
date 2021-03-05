@@ -23,7 +23,7 @@ public class Row extends Composition {
 
 
 
-    public Bounds updateCursor(Bounds cursor, Glyph glyph) {
+    public void updateCursor(Bounds cursor, Glyph glyph) {
 //        Bounds bounds = new Bounds(new Point(this.getBounds().getPoint().x, glyph.getBounds().getHeight()+cursor.getPoint().y),
 //                glyph.getBounds().getHeight()+cursor.getPoint().x, +this.getBounds().getPoint().y+cursor.getPoint().y);
 
@@ -31,10 +31,10 @@ public class Row extends Composition {
                 this.getBounds().getPoint().x+cursor.getPoint().x, glyph.getBounds().getWidth()+cursor.getPoint().y);
 
 
-        return bounds;
+
     }
 
-    public void adjustParent(Bounds bounds, Glyph child){
+    public void adjustParent(Bounds bounds){
 
 
         this.getBounds().setWidth(bounds.getPoint().x);

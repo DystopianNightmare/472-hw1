@@ -1,8 +1,10 @@
 
 >
-java:S1116"Remove this empty statement.(Åñ­õþÿÿÿÿ8ŸŒô×ÿ.
-]	java:S125"<This block of commented-out lines of code should be removed.(âèÀáûÿÿÿÿ8­¶¸Ûÿ.
+java:S1116"Remove this empty statement.(Åñ­õþÿÿÿÿ8ÉÇ€£€/
 W
-java:S1161":Add the "@Override" annotation above this method signature(ÙÜîÔ8û”†Ûÿ.
-W
-java:S1161#":Add the "@Override" annotation above this method signature(ÀüÚþ8û”†Ûÿ.
+java:S1161":Add the "@Override" annotation above this method signature(ÙÜîÔ8ÉÇ€£€/
+V
+java:S1161%":Add the "@Override" annotation above this method signature(×ˆªc8ÉÇ€£€/
+]	java:S125"<This block of commented-out lines of code should be removed.(âèÀáûÿÿÿÿ8ÉÇ€£€/
+]	java:S125"<This block of commented-out lines of code should be removed.(‚€Ñûÿÿÿÿ8ÉÇ€£€/
+X	java:S125*"<This block of commented-out lines of code should be removed.(ñÙ‚á8ÉÇ€£€/

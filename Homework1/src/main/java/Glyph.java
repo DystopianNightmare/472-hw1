@@ -14,7 +14,7 @@ abstract class Glyph {
     }
 
 
-    public void adjustParent(Bounds bounds, Glyph child) {
+    public void adjustParent(Bounds bounds) {
     }
 
     abstract void draw(Window window);

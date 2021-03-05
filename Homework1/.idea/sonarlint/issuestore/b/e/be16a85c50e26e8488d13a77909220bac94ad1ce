@@ -1,15 +1,17 @@
 
+W
+java:S1117":Rename "cursor" which hides the field declared at line 10.(»™ş8ÉËŸÙÿ.
+D	java:S108'")Either remove or fill this block of code.(ÛÇ8ãÇ€£€/
 L
 java:S1068
 "*Remove this unused "cursor" private field.(æÜ°şÿÿÿÿ8ë‰”¹ÿ.
-D	java:S1080")Either remove or fill this block of code.(ÛÇ8İÄÆÚÿ.
-J	java:S1084")Either remove or fill this block of code.(Ñˆ¿‘úÿÿÿÿ8¨ğÚÿ.
-\
-java:S1117":Rename "cursor" which hides the field declared at line 10.(éÚö³ıÿÿÿÿ8ÉËŸÙÿ.
-V
-java:S1117"4Rename "i" which hides the field declared at line 9.(ùó›Ìøÿÿÿÿ8ÃÂÚÿ.
-G
-java:S1068"*Remove this unused "parent" private field.(Ğ‘õ‰8ë‰”¹ÿ.
+]	java:S125."<This block of commented-out lines of code should be removed.(Àİ‚úüÿÿÿÿ8ãÇ€£€/
+J	java:S108+")Either remove or fill this block of code.(Ñˆ¿‘úÿÿÿÿ8ãÇ€£€/
+O
+java:S1481"-Remove this unused "childPos" local variable.(–«ÍŠùÿÿÿÿ8¤·Üÿÿ.
 W
 java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8İÄÆÚÿ.
-]	java:S125)"<This block of commented-out lines of code should be removed.(¶¹šÒÿÿÿÿÿ8éšŞÿ.
+G
+java:S1068"*Remove this unused "parent" private field.(Ğ‘õ‰8ë‰”¹ÿ.
+V
+java:S1117"4Rename "i" which hides the field declared at line 9.(ùó›Ìøÿÿÿÿ8ÃÂÚÿ.

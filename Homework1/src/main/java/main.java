@@ -9,12 +9,13 @@ public class main {
         Column main = new Column(new SimpleCompositor(swingWindow));
         Column column1 = new Column(new SimpleCompositor(swingWindow));
         Column column2 = new Column(new SimpleCompositor(swingWindow));
-        Row row = new Row(new SimpleCompositor(swingWindow));
-        Row row2 = new Row(new SimpleCompositor(swingWindow));
+        Column column3 = new Column(new SimpleCompositor(swingWindow));
+//        Row row = new Row(new SimpleCompositor(swingWindow));
+//        Row row2 = new Row(new SimpleCompositor(swingWindow));
 
         main.insert(column1,0);
         main.insert(column2,1);
-
+        main.insert(column3,2);
 
         Character a = new Character('a');
         column1.insert(a, 0);
@@ -32,11 +33,11 @@ public class main {
         Character C = new Character('C');
         Character D = new Character('D');
 
-        main.insert(row,2);
+
         Character X = new Character('X');
         Character Y= new Character('R');
-        row.insert(X,0);
-        row.insert(Y,1);
+        column3.insert(X,0);
+        column3.insert(Y,1);
 
         column2.insert(A,0);
         column2.insert(B,1);
@@ -46,11 +47,12 @@ public class main {
         System.out.println("main " +main.toString());
         System.out.println("col1 " +column1.toString());
         System.out.println("col2 " +column2.toString());
+        System.out.println("col3 " +column2.toString());
         System.out.println("a " +a.toString());
-        System.out.println("b " +b.toString());
+//        System.out.println("b " +b.toString());
         System.out.println("A " +A.toString());
         System.out.println("B " +B.toString());
-        System.out.println("ROW " +row.toString());
+//        System.out.println("ROW " +row.toString());
         System.out.println("X " +X.toString());
         System.out.println("Y " +Y.toString());
 

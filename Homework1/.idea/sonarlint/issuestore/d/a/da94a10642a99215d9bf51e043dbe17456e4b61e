@@ -1,19 +1,19 @@
 
+d
+java:S3252%"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ĞöÀÉıÿÿÿÿ
+>
+java:S11725"(Remove this unused method parameter "c".(­ı•å
 k	java:S116"QRename this field "_glyph" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ åíøÿÿÿÿ
+h	java:S116"NRename this field "_fm" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼»üÿÿÿÿ
+P
+java:S1161":Add the "@Override" annotation above this method signature(®¡òù
+g	java:S116"RRename this field "_window" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¨Ô•
 l	java:S116"RRename this field "_jFrame" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å²ÅÜøÿÿÿÿ
 j
 java:S1450"TRemove the "_pane" field and declare it as a local variable in the relevant methods.(ÿœ§ 
-g	java:S116"RRename this field "_window" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¨Ô•
-h	java:S116"NRename this field "_fm" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼»üÿÿÿÿ
 n	java:S116"TRename this field "_graphics" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã”•ğıÿÿÿÿ
-d
-java:S3252%"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ĞöÀÉıÿÿÿÿ
 <
 java:S1170"!Make this final field static too.(Ë‡€ÿÿÿÿÿ
->
-java:S11725"(Remove this unused method parameter "c".(­ı•å
+e	java:S116"PRename this field "_pane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿœ§ 
 7
 java:S1170"!Make this final field static too.(üËØä
-P
-java:S1161":Add the "@Override" annotation above this method signature(®¡òù
-e	java:S116"PRename this field "_pane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿœ§ 
