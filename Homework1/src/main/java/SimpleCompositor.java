@@ -21,16 +21,16 @@ public class SimpleCompositor extends Compositor {
     @Override
     public void compose() {
 
-        Bounds cursor = new Bounds(new Point(super.composition.getBounds().getPoint()), 0, 0);
+        Bounds cursor = new Bounds(new Point(super.composition.getBounds().getPoint()), super.composition.getBounds().getHeight(), super.composition.getBounds().getWidth());
         try {
             int i = 0;
             int childPos=0;
             while (true) {
                 try {
                     Glyph child = composition.child(i);
+
                     i++;
                     child.setSize(window);
-//
 //                    if(childPos==0){
 //                        child.setLocation(cursor.getPoint());
 //                        childPos++;
@@ -39,11 +39,9 @@ public class SimpleCompositor extends Compositor {
 //                        child.setLocation(cursor.getPoint());
 //                    }
                     child.setLocation(cursor.getPoint());
-                    cursor = composition.updateCursor(cursor, child);
-
                     child.compose();
-
-                    composition.adjustParent(child);
+                    cursor = composition.updateCursor(cursor, child);
+                    composition.adjustParent(cursor, child);
 
                 } catch (NullChildException e) {
 
@@ -52,8 +50,9 @@ public class SimpleCompositor extends Compositor {
         } catch (IndexOutOfBoundsException e) {
 
         }finally{
-            composition.setBounds(cursor);
+//            composition.setBounds(cursor);
         }
+
     }
 
 

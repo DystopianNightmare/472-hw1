@@ -24,18 +24,24 @@ public class Row extends Composition {
 
 
     public Bounds updateCursor(Bounds cursor, Glyph glyph) {
-        Bounds bounds = new Bounds(new Point(this.getBounds().getWidth(), this.getBounds().getPoint().y), this.getBounds().getHeight(), this.getBounds().getWidth());
+//        Bounds bounds = new Bounds(new Point(this.getBounds().getPoint().x, glyph.getBounds().getHeight()+cursor.getPoint().y),
+//                glyph.getBounds().getHeight()+cursor.getPoint().x, +this.getBounds().getPoint().y+cursor.getPoint().y);
 
+        Bounds bounds = new Bounds(new Point(glyph.getBounds().getWidth()+cursor.getPoint().x, this.getBounds().getPoint().y),
+                this.getBounds().getPoint().x+cursor.getPoint().x, glyph.getBounds().getWidth()+cursor.getPoint().y);
 
 
         return bounds;
     }
 
+    public void adjustParent(Bounds bounds, Glyph child){
 
-    public void adjustParent(Glyph child){
 
-        this.getBounds().setHeight((Math.max(child.getBounds().getHeight(), 2+this.getBounds().getHeight())));
-        this.getBounds().setWidth(child.getBounds().getPoint().x+child.getBounds().getWidth());
+        this.getBounds().setWidth(bounds.getPoint().x);
+        this.getBounds().setHeight(bounds.getPoint().y);
+//        this.getBounds().setWidth(Math.max(child.getBounds().getWidth(),this.getBounds().getWidth()));
+
+
     }
 
 }

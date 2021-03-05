@@ -1,4 +1,3 @@
-import java.awt.*;
 
 public class Character extends Glyph {
 
@@ -19,8 +18,5 @@ public class Character extends Glyph {
         super.getBounds().setHeight(window.charHeight(aChar));
         super.getBounds().setWidth(window.charWidth(aChar));
 }
-
-
-
 
 }

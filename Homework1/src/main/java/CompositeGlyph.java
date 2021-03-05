@@ -8,27 +8,26 @@ public abstract class CompositeGlyph extends Glyph {
     protected ArrayList<Glyph> children = new ArrayList<Glyph>();
 
 
-
-
     Glyph child(int position) throws NullChildException {
-    if(children.get(position) == null){
-        throw new NullChildException();
-    } return children.get(position);
+        if (children.get(position) == null) {
+            throw new NullChildException();
+        }
+        return children.get(position);
     }
 
     void insert(Glyph glyph, int position) {
 
         glyph.setParent(this);
         this.children.add(position, glyph);
-        Glyph root = this;
-        while(root.getParent() != null){
+        Glyph root = glyph;
+        while (root.getParent() != null) {
             root = root.getParent();
         }
         root.compose();
     }
 
-     void remove(Glyph glyph){}
-
+    void remove(Glyph glyph) {
+    }
 
 
 }

@@ -9,7 +9,6 @@ public class Bounds {
        this.point = point;
        this.height = height;
        this.width =width;
-
    }
 
     public int getHeight() {
@@ -36,13 +35,5 @@ public class Bounds {
         this.point.x = point.x;
         this.point.y=point.y;
     }
-
-    public void setPointX(int x){
-       this.point.x=x;
-    }
-    public void setPointY(int y){
-        this.point.y=y;
-    }
-
 
 }

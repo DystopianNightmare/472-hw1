@@ -3,6 +3,4 @@ public abstract class Compositor {
     public void setComposition(Composition composition) {this.composition=composition;}
     abstract void compose();
 
-
-
 }
