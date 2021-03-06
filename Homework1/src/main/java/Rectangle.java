@@ -11,7 +11,7 @@ public class Rectangle extends Glyph {
 
     @Override
     void draw(Window window) {
-        window.drawRectangle(getBounds().getPoint().x , getBounds().getPoint().y,   getBounds().getWidth(),getBounds().getHeight());
+        window.drawRectangle(getBounds().getPoint().x , getBounds().getPoint().y,   getBounds().getWidth(), getBounds().getHeight());
     }
 
 }

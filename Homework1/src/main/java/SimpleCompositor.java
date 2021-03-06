@@ -32,6 +32,7 @@ public class SimpleCompositor extends Compositor {
                     child.setSize(window);
                     child.setLocation(cursor.getPoint());
                     child.compose();
+
                     composition.updateCursor(cursor, child);
                     System.out.println("Cursor "+ cursor.toString());
                 } catch (NullChildException e) {
