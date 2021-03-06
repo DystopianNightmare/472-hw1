@@ -1,10 +1,7 @@
-import java.awt.*;
-
 public class Column extends Composition {
 
     public Column(Compositor compositor) {
         super(compositor);
-
     }
 
     @Override
@@ -18,20 +15,14 @@ public class Column extends Composition {
         return children.get(position);
     }
 
-
-
     public void updateCursor(Bounds cursor, Glyph glyph) {
         cursor.setY(glyph.getBounds().getHeight()+cursor.getPoint().y);
-//        cursor.setX(cursor.getPoint().x);
         cursor.setHeight(cursor.getHeight()+glyph.getBounds().getHeight());
         cursor.setWidth(Math.min(cursor.getPoint().x, glyph.getBounds().getWidth()));
     }
 
     public void adjustParent(Bounds bounds){
-
         getBounds().setHeight(bounds.getHeight());
         getBounds().setWidth(bounds.getWidth());
-
     }
-
 }

@@ -1,9 +1,7 @@
-import java.awt.*;
 import java.util.ArrayList;
+import java.util.List;
 
 public abstract class CompositeGlyph extends Glyph {
-
-    public Composition composition;
 
     protected ArrayList<Glyph> children = new ArrayList<Glyph>();
 
@@ -16,7 +14,6 @@ public abstract class CompositeGlyph extends Glyph {
     }
 
     void insert(Glyph glyph, int position) {
-
         glyph.setParent(this);
         this.children.add(position, glyph);
         Glyph root = glyph;
@@ -27,7 +24,14 @@ public abstract class CompositeGlyph extends Glyph {
     }
 
     void remove(Glyph glyph) {
+        this.children.remove(glyph);
+        Glyph root = glyph;
+        while (root.getParent() != null) {
+            root = root.getParent();
+        }
+        root.compose();
     }
-
-
+    public List<Glyph> getChildren() {
+        return children;
+    }
 }

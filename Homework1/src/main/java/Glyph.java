@@ -1,5 +1,3 @@
-
-
 import java.awt.*;
 
 abstract class Glyph {
@@ -44,21 +42,11 @@ abstract class Glyph {
         this.parent = parent;
     }
 
-    void setBounds(Bounds bounds) {
-        this.bounds = bounds;
-    }
-
     Bounds getBounds() {
         return bounds;
     }
 
     void setSize(Window window) {
-    }
-
-
-    void setLocation(Point point) {
-        bounds.setPoint(point)
-        ;
     }
 
     public String toString() {
