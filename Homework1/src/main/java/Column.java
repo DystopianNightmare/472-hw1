@@ -4,6 +4,16 @@ public class Column extends Composition {
         super(compositor);
     }
 
+    public Column(String[] strings, Compositor compositor) {
+        super(compositor);
+        try {
+            for (int i=0; i<strings.length; i++)
+                insert(new Row(strings[i],compositor),i );
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+
     @Override
     void draw(Window window) {
         for (Glyph child : children) {
