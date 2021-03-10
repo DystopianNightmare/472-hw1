@@ -8,7 +8,7 @@ public class main {
         Row row1 = new Row("row1",new SimpleCompositor(swingWindow));
         border.insert(row1,0);
 
-        main.insert(row1,0);
+        main.insert(border,0);
 //        String[] arr = new String[]{"test1234"};
 //        Column main = new Column(new SimpleCompositor(swingWindow));
 //        Column column1 = new Column(new SimpleCompositor(swingWindow));
